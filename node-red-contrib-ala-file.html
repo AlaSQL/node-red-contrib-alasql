@@ -1,3 +1,73 @@
+<!-- ALA-FILE IN -->
+
+<script type="text/x-red" data-template-name="ala-file in">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name of node</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-filename"><i class="icon-tag"></i> Name of file (without extension)</label>
+        <input type="text" id="node-input-filename" placeholder="file name...">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-format"><i class="fa fa-code"></i> Format</label>
+        <select id="node-input-format" style="width:180px;">
+            <option value="xlsx">.xlsx</option>
+            <option value="xls">.xls</option>
+            <option value="csv">.csv</option>
+            <option value="json">.json</option>
+            <option value="tsv">.tsv</option>
+            <option value="txt">.txt</option>
+            <option value="sql">.sql</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-columns"><i class="icon-tag"></i> Columns </label>
+        <input type="text" id="node-input-columns" placeholder="Select columns to be stored. Use * to select all">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-headers"><i class="fa fa-list"></i> First row must contain column names</label>
+        <input type="checkbox" id="node-input-headers" style="width:20px">
+    </div>
+    <div class="form-tips"><span data-i18n="file.tip">Tip: You should fully path the Filename.</span></div>
+</script>
+
+<script type="text/x-red" data-help-name="ala-file in">
+    <p>Reads <code>msg.payload</code> from the specified file in XLSX, CSV, or other formats. The node uses <a href="https://github.com/agershun/alasql" target="_blank">AlaSQL</a> library.</p>
+    <p>The filename can be configured in the node. If left blank it should be set by <code>msg.filename</code> on the incoming message. <br> In either case, <strong>do not</strong> include the extension ('.xlsx', '.csv', etc.) as that will be appended to the file path based on the <i>Format</i> configuration parameter.</p>
+</script>
+
+
+<script type="text/javascript">
+
+    RED.nodes.registerType('ala-file in',{
+        category: 'storage',
+        color:"#f7df8e",
+        inputs:1,
+        outputs:1,
+        defaults: {
+            name: {value:''},
+            filename: {value:''},
+            format: {value:'xlsx'},
+            columns: {value:'*'},
+            headers: {value:true}
+        },
+        icon: "alasql.png",
+        label: function() {
+            console.log(this.format);
+            return this.name||this.format||"ala file in";
+        },
+        labelStyle: function() {
+            return this.name?"node_label_italic":"";
+        },
+    });
+</script>
+
+<!-- ALA-FILE OUT -->
 <script type="text/x-red" data-template-name="ala-file out">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -31,17 +101,18 @@
         <label for="node-input-headers"><i class="fa fa-list"></i> First row must contain column names</label>
         <input type="checkbox" id="node-input-headers" style="width:20px">
     </div>
-
+    <div class="form-tips"><span data-i18n="file.tip">Tip: You should fully path the Filename.</span></div>
 </script>
 
 <script type="text/x-red" data-help-name="ala-file out">
     <p>Write <code>msg.payload</code> to a specified fileformat (<code>.xlsx</code>, <code>.xls</code>, <code>.csv</code>, <code>.json</code>, <code>.tsv</code>, <code>.txt</code> or <code>.sql</code>). The node uses <a href="https://github.com/agershun/alasql" target="_blank">AlaSQL</a> library.</p>
+    <p>The filename can be configured in the node. If left blank it should be set by <code>msg.filename</code> on the incoming message. <br> In either case, <strong>do not</strong> include the extension ('.xlsx', '.csv', etc.) as that will be appended to the file path based on the <i>Format</i> configuration parameter.</p>
 </script>
 
 <script type="text/javascript">
     RED.nodes.registerType('ala-file out',{
         category: 'storage',
-        color:"#f7df5e",
+        color:"#f7df8e",
         inputs:1,
         outputs:0,
         defaults: {
@@ -52,9 +123,10 @@
             headers: {value:true}
         },
         icon: "alasql.png",
+        align: "right",
         label: function() {
             //console.log(this.format);
-            return this.name||this.format||"Ala-file";
+            return this.name||this.format||"Ala-file out";
         },
         labelStyle: function() {
             return this.name?"node_label_italic":"";
@@ -63,70 +135,3 @@
 
 </script>
 
-<!-- ALA-FILE -->
-
-<script type="text/x-red" data-template-name="ala-file">
-    <div class="form-row">
-        <label for="node-input-name"><i class="icon-tag"></i> Name of node</label>
-        <input type="text" id="node-input-name" placeholder="Name">
-    </div>
-
-    <div class="form-row">
-        <label for="node-input-filename"><i class="icon-tag"></i> Name of exported file (without extension)</label>
-        <input type="text" id="node-input-filename" placeholder="file name...">
-    </div>
-
-    <div class="form-row">
-        <label for="node-input-format"><i class="fa fa-code"></i> Format</label>
-        <select id="node-input-format" style="width:180px;">
-            <option value="xlsx">.xlsx</option>
-            <option value="xls">.xls</option>
-            <option value="csv">.csv</option>
-            <option value="json">.json</option>
-            <option value="tsv">.tsv</option>
-            <option value="txt">.txt</option>
-            <option value="sql">.sql</option>
-        </select>
-    </div>
-
-    <div class="form-row">
-        <label for="node-input-columns"><i class="icon-tag"></i> Columns </label>
-        <input type="text" id="node-input-columns" placeholder="Select columns to be stored. Use * to select all">
-    </div>
-
-    <div class="form-row">
-        <label for="node-input-headers"><i class="fa fa-list"></i> First row must contain column names</label>
-        <input type="checkbox" id="node-input-headers" style="width:20px">
-    </div>
-
-</script>
-
-<script type="text/x-red" data-help-name="ala-file">
-    <p>Reads <code>msg.payload</code> from the specified file in XLSX, CSV, or other formats. The node uses <a href="https://github.com/agershun/alasql" target="_blank">AlaSQL</a> library.</p>
-</script>
-
-
-<script type="text/javascript">
-
-    RED.nodes.registerType('ala-file',{
-        category: 'storage',
-        color:"#f7df8e",
-        inputs:1,
-        outputs:1,
-        defaults: {
-            name: {value:''},
-            filename: {value:''},
-            format: {value:'xlsx'},
-            columns: {value:'*'},
-            headers: {value:true}
-        },
-        icon: "alasql.png",
-        label: function() {
-            console.log(this.format);
-            return this.name||this.format||"ala file";
-        },
-        labelStyle: function() {
-            return this.name?"node_label_italic":"";
-        },
-    });
-</script>
