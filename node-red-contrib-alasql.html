@@ -33,7 +33,7 @@
     </code></pre>
     <p>To manipulate output format please consult the use of <a href="https://github.com/agershun/alasql/wiki/Value"><code>VALUE OF</code></a>, <a href="https://github.com/agershun/alasql/wiki/MATRIX"><code>MATRIX OF</code></a>, <a href="https://github.com/agershun/alasql/wiki/COLUMN"><code>COLUMN OF</code></a>, <a href="https://github.com/agershun/alasql/wiki/ROW"><code>ROW OF</code></a>, and <a href="https://github.com/agershun/alasql/wiki/RECORDSET"><code>RECORDSET OF</code></a>.</p>
     <h4><a id="Multiply_queries_36"></a>Multiply queries</h4>
-    <p>The <code>msg.topic</code> can hold several SQL queries separated by <code>;</code>. The returned value will be an array with the result from each typically returned payload.</p>
+    <p>The <code>msg.query</code> can hold several SQL queries separated by <code>;</code>. The returned value will be an array with the result from each typically returned payload.</p>
     <h4><a id="Binding_parameters_41"></a>Binding parameters</h4>
     <p>The <code>msg.payload</code> will be passed as a binded parameter. You can refer to the value by having <code>$0</code> in your SQL. If <code>msg.payload</code> is an array the first value will be <code>$0</code>, the second <code>$1</code> and so forth.</p>
     <p>Please <a href="https://github.com/agershun/alasql/wiki/readme">consult the AlaSQL wiki</a> to undertand the flexible nature of the library.</p>
