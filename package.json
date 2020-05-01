@@ -8,11 +8,14 @@
   ],
   "scripts": {
     "test-setup": "node ./test/setup",
-    "test": "node-red -u ./test/flotsam/userdir ./test/flotsam/userdir/alafiletests.json"
+    "test": "node-red -u ./test/flotsam/userdir ./test/flotsam/userdir/alafiletests.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "alasql": "^0.5.5",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -36,5 +39,6 @@
       "alasql": "node-red-contrib-alasql.js",
       "alafile": "node-red-contrib-alafile.js"
     }
-  }
+  },
+  "snyk": true
 }
