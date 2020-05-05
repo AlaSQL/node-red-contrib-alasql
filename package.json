@@ -13,7 +13,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "alasql": "^0.5.5",
+    "alasql": "^0.6.0",
     "fs-extra": "^8.1.0",
     "snyk": "^1.316.1"
   },
