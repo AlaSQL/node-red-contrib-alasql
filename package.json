@@ -1,48 +1,52 @@
 {
-	"name": "node-red-contrib-alasql",
-	"version": "2.0.1",
-	"description": "Node-RED wrapper for AlaSQL database and XLSX import/export",
-	"author": "Mathias Rangel Wulff <m@rawu.dk>, Andrey Gershun <agershun@gmail.com>",
-	"contributors": [
-		"Kim McKinley <kim@lrunit.net> (http://github.com/potofcoffee2go)"
-	],
-	"scripts": {
-		"test-setup": "node ./test/setup",
-		"test": "node-red -u ./test/flotsam/userdir ./test/flotsam/userdir/alafiletests.json"
-	},
-	"dependencies": {
-		"alasql": "^0.6.0",
-		"fs-extra": "^9.0.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/AlaSQL/node-red-contrib-alasql"
-	},
-	"license": "MIT",
-	"keywords": [
-		"node-red",
-		"alasql",
-		"sql",
-		"nosql",
-		"database",
-		"excel",
-		"xls",
-		"xlsx",
-		"csv",
-		"json"
-	],
-	"node-red": {
-		"nodes": {
-			"alasql": "node-red-contrib-alasql.js",
-			"alafile": "node-red-contrib-alafile.js"
-		}
-	},
-	"prettier": {
-		"useTabs": true,
-		"printWidth": 100,
-		"singleQuote": true,
-		"arrowParens": "always",
-		"bracketSpacing": false,
-		"trailingComma": "es5"
-	}
+  "name": "node-red-contrib-alasql",
+  "version": "2.0.1",
+  "description": "Node-RED wrapper for AlaSQL database and XLSX import/export",
+  "author": "Mathias Rangel Wulff <m@rawu.dk>, Andrey Gershun <agershun@gmail.com>",
+  "contributors": [
+    "Kim McKinley <kim@lrunit.net> (http://github.com/potofcoffee2go)"
+  ],
+  "scripts": {
+    "test-setup": "node ./test/setup",
+    "test": "node-red -u ./test/flotsam/userdir ./test/flotsam/userdir/alafiletests.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "alasql": "^0.6.0",
+    "fs-extra": "^9.0.1",
+    "snyk": "^1.359.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlaSQL/node-red-contrib-alasql"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node-red",
+    "alasql",
+    "sql",
+    "nosql",
+    "database",
+    "excel",
+    "xls",
+    "xlsx",
+    "csv",
+    "json"
+  ],
+  "node-red": {
+    "nodes": {
+      "alasql": "node-red-contrib-alasql.js",
+      "alafile": "node-red-contrib-alafile.js"
+    }
+  },
+  "prettier": {
+    "useTabs": true,
+    "printWidth": 100,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "bracketSpacing": false,
+    "trailingComma": "es5"
+  },
+  "snyk": true
 }
