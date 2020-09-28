@@ -25,16 +25,16 @@ ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alasql@^0.6.0:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/alasql/-/alasql-0.6.3.tgz#d65b103179d501bac0624b1d2008beec9e3dc28f"
-  integrity sha512-QbIU+t+xYN9CFLZtejyp/1/mmEcY2sbvHrvs0DNb7H8FhJzNyaUr8+cXRuXuzMhivxXUnircVSxYxHBDkHHaBA==
+alasql@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/alasql/-/alasql-0.6.4.tgz#1d5333d48f65109b6af5a252ac5da999cae8df57"
+  integrity sha512-0f6d93FLQZusrN2WPsAuXeO4shoiYrHfaCWedOUpKTjuNZt2n/FkjjRx4dw2q0ObfmpDqHGkew30u/4hFU6PBA==
   dependencies:
     dom-storage "^2.1.0"
     es6-promise "^4.2.6"
-    lodash "^4.17.15"
+    lodash "4.17.20"
     request "2.88.2"
-    xlsx "0.16.4"
+    xlsx "0.16.7"
     yargs "15.4.1"
 
 ansi-regex@^5.0.0:
@@ -380,10 +380,10 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash@^4.17.15:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+lodash@4.17.20:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 mime-db@1.44.0:
   version "1.44.0"
@@ -610,10 +610,10 @@ wrap-ansi@^6.2.0:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
 
-xlsx@0.16.4:
-  version "0.16.4"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.4.tgz#6cc8913fb12846a7c76e090650d8bc4c4d3f02d1"
-  integrity sha512-l1xqTdXRK3DCxkxHGj3OxZM1ertzeqjWodi0jevBNSivoyYMPEJAHhVW7BAfM3gFXK35dCM0CacGUXbATdFvqQ==
+xlsx@0.16.7:
+  version "0.16.7"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.7.tgz#62fd6590addac7c4419daaaa2b0c5388015d5f69"
+  integrity sha512-Xc4NRjci2Grbh9NDk/XoaWycJurxEug1wwn0aJCmB0NvIMyQuHYq2muWLWGidYNZPf94aUbqm6K8Fbjd7gKTZg==
   dependencies:
     adler-32 "~1.2.0"
     cfb "^1.1.4"
