@@ -12,7 +12,7 @@
 	},
 	"dependencies": {
 		"alasql": "^0.6.5",
-		"fs-extra": "^9.0.1"
+		"fs-extra": "^9.1.0"
 	},
 	"repository": {
 		"type": "git",
