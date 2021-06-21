@@ -25,16 +25,16 @@ ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alasql@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/alasql/-/alasql-1.7.2.tgz#4cbbd907137b8b677140fa063f1625d65c36b2e5"
-  integrity sha512-6V2CqqP8xr/bGmQNRfx4VXjCILmZs5XzQP5ylhdU92KdkECvxW4bEwLi1Rg/7gGcXWc9KAozKgUQlUvbk5dM+Q==
+alasql@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/alasql/-/alasql-1.7.3.tgz#ef9909e345b4ac8d5f00e7e6b772c7e419b41db4"
+  integrity sha512-YaMgHfoR4f7n05NXFVgD+WgmlNKlP4BGZpXSkJCYtniioK7DMJUoN6ZZmUpM0LAavPLXxHM+V+4gM+M/82sIoQ==
   dependencies:
     dom-storage "^2.1.0"
     es6-promise "^4.2.6"
     lodash "4.17.21"
     request "2.88.2"
-    xlsx "0.16.9"
+    xlsx "0.17.0"
     yargs "16.2.0"
 
 ansi-regex@^5.0.0:
@@ -555,10 +555,10 @@ wrap-ansi@^7.0.0:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
 
-xlsx@0.16.9:
-  version "0.16.9"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.16.9.tgz#dacd5bb46bda6dd3743940c9c3dc1e2171826256"
-  integrity sha512-gxi1I3EasYvgCX1vN9pGyq920Ron4NO8PNfhuoA3Hpq6Y8f0ECXiy4OLrK4QZBnj1jx3QD+8Fq5YZ/3mPZ5iXw==
+xlsx@0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.17.0.tgz#028176a0140967dcee1817d221678461e47481c8"
+  integrity sha512-bZ36FSACiAyjoldey1+7it50PMlDp1pcAJrZKcVZHzKd8BC/z6TQ/QAN8onuqcepifqSznR6uKnjPhaGt6ig9A==
   dependencies:
     adler-32 "~1.2.0"
     cfb "^1.1.4"
