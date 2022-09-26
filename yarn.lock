@@ -22,10 +22,10 @@ ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alasql@1.7.4:
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/alasql/-/alasql-1.7.4.tgz#1cd40293ca766c852a6fc2a41cf982d1d505c5cb"
-  integrity sha512-1s1umBPBMSREGwRcHxwlWkPfW+1xY/WQtIR26N9hzlTpY9kTm0wJHRin+60FwSSunsZo/wV//KoKyn6bek8/0g==
+alasql@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/alasql/-/alasql-2.0.5.tgz#ad9edce88a16518e1580407fbe506c25bd24506a"
+  integrity sha512-Asyi3KiipPgA/nmGoiI+KZQRWQSoCIS97DEWDu/avGaASMtRObt7XvlBkoLUzzkNM+vfgMjG2gpVJlhLuKHzyw==
   dependencies:
     dom-storage "^2.1.0"
     es6-promise "^4.2.6"
