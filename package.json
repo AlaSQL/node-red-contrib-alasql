@@ -11,7 +11,7 @@
 		"test": "node-red -u ./test/flotsam/userdir ./test/flotsam/userdir/alafiletests.json"
 	},
 	"dependencies": {
-		"alasql": "2.0.5",
+		"alasql": "2.1.4",
 		"fs-extra": "10.1.0"
 	},
 	"repository": {
