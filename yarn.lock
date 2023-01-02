@@ -12,11 +12,12 @@ adler-32@~1.3.0:
   resolved "https://registry.yarnpkg.com/adler-32/-/adler-32-1.3.1.tgz#1dbf0b36dda0012189a32b3679061932df1821e2"
   integrity sha512-ynZ4w/nUUv5rrsR8UUGoe1VC9hZj6V5hU9Qw1HlMDJGEJw5S7TfTErWTjMys6M7vr0YWcPqs3qAr4ss0nDfP+A==
 
-alasql@2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/alasql/-/alasql-2.2.5.tgz#3e1ab56315ebf4a8197555ec9483a4eeaa8635b1"
-  integrity sha512-hnxyte9U4/6z6l7YBLFHKeSx5UO+gV+/CgA9FaJtLLBgtq0crFAK5/bLrLz9VcR10yqXeckSjdBYIh2Wqz344w==
+alasql@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/alasql/-/alasql-2.5.0.tgz#0d16c5cb89b1964c42809eb7118830c7f6e70b61"
+  integrity sha512-PsRcmHtkOgc9y2JAa4gX1YeHp2QD5e5bPZbJNMrIiFeZGiOYZ6ubgb55MLf2KmiZtwA+5/NDzGG+2OsX6e715Q==
   dependencies:
+    cross-fetch "^3.1.5"
     dom-storage "2.1.0"
     es6-promise "4.2.8"
     node-fetch "2"
@@ -83,6 +84,13 @@ crc-32@~1.2.1:
   resolved "https://registry.yarnpkg.com/crc-32/-/crc-32-1.2.2.tgz#3cad35a934b8bf71f25ca524b6da51fb7eace2ff"
   integrity sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==
 
+cross-fetch@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
+  integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
+  dependencies:
+    node-fetch "2.6.7"
+
 dom-storage@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/dom-storage/-/dom-storage-2.1.0.tgz#00fb868bc9201357ea243c7bcfd3304c1e34ea39"
@@ -146,7 +154,7 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-node-fetch@2:
+node-fetch@2, node-fetch@2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
