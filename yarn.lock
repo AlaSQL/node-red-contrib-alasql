@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-alasql@4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/alasql/-/alasql-4.5.2.tgz#5e11b403e656a12e9d7125c1cde996651d2b3d3f"
-  integrity sha512-2J0YGxt6+BBpa4R+8iFDcjZCW68sm/15pLRr7rv+bde1R08b/ONjcY6u23oScQn60BqkBB2qmVvQ5co9OiwWtw==
+alasql@4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/alasql/-/alasql-4.6.0.tgz#5c0aac00c140365196dc5a2de687915da2837bc1"
+  integrity sha512-2/gYKGEbcD2zaoBEJZhdAaNkczHnpoDW/gPECMEmJ80C0egQ0prnw+WwVTYLfyadhZAaAIxtxeHl5APnRDQj0A==
   dependencies:
     cross-fetch "4"
     yargs "16"
